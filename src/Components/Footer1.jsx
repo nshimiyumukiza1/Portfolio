@@ -39,7 +39,7 @@ const Footer = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 pt-16 pb-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-          {/* Brand Section */}
+        
           <div className="lg:col-span-2 space-y-6">
             <div className="group">
               <h2 className="text-4xl font-bold bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent group-hover:scale-105 transition-transform duration-300">
@@ -51,7 +51,7 @@ const Footer = () => {
               Passionate student-developer crafting modern and responsive web applications with cutting-edge technologies.
             </p>
 
-            {/* Social Links */}
+        
             <div className="flex space-x-4">
               {socialLinks.map((social, index) => (
                 <a
@@ -69,7 +69,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Quick Links */}
+      
           <div className="space-y-6">
             <h3 className="text-xl font-bold text-white mb-4 relative">
               Quick Links
@@ -91,7 +91,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact Info */}
+   
           <div className="space-y-6">
             <h3 className="text-xl font-bold text-white mb-4 relative">
               Get In Touch
@@ -117,7 +117,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Divider */}
         <div className="relative mb-8">
           <div className="absolute inset-0 flex items-center">
             <div className="w-full border-t border-gray-800"></div>
@@ -131,7 +130,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom Section */}
+       
         <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
           <div className="text-center md:text-left">
             <p className="text-gray-400 text-sm">
@@ -142,7 +141,7 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Scroll to Top Button */}
+   
           <button
             onClick={scrollToTop}
             className="group flex items-center space-x-2 bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 text-white px-6 py-3 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/20"
@@ -153,7 +152,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom Gradient Line */}
+     
       <div className="h-1 bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500"></div>
     </footer>
   );

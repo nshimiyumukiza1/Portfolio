@@ -1,69 +1,4 @@
 
-// import { SiHtml5, SiTailwindcss, SiDevexpress } from "react-icons/si";
-// import { FaNodeJs, FaReact } from "react-icons/fa";
-
-// const About = () => {
-//   const skills = [
-//     { name: "HTML", icon: <SiHtml5 className="text-3xl text-orange-500" />, level: "w-11/12" },
-//     { name: "Tailwind CSS", icon: <SiTailwindcss className="text-3xl text-blue-500" />, level: "w-10/12" },
-//     { name: "Java Script", icon: <FaNodeJs className="text-3xl text-yellow-500" />, level: "w-11/12" },
-//     { name: "React JS", icon: <FaReact className="text-3xl text-cyan-500" />, level: "w-10/12" },
-//     { name: "Node JS", icon: <SiDevexpress className="text-3xl text-green-500" />, level: "w-9/12" },
-//   ];
-
-//   return (
-//     <div className="bg-black text-white py-12 px-6 md:px-16">
-//       <div className="max-w-6xl mx-auto">
-//         <h1 className="text-4xl font-semibold mb-12 text-center text-green-400 uppercase">
-//           About Me
-//         </h1>
-//         <div className="flex flex-col md:flex-row items-center gap-12">
-//           <img
-//             src="./image.png"
-//             alt="Profile"
-//             className="w-72 h-96 rounded-lg object-cover shadow-lg hover:scale-105 transition-transform duration-300"
-//           />
-//           <div className="flex-1">
-//             <p className="text-lg leading-relaxed mb-8">
-//               I am a passionate student-developer focused on building modern and responsive web applications.
-//               With a strong foundation in both frontend and backend technologies, I strive to create seamless and efficient user experiences.
-//             </p>
-//             <h2 className="text-2xl font-bold text-blue-400 text-center mb-4">Skills</h2>
-//             <div className="space-y-6">
-//               {skills.map((skill, index) => (
-//                 <div key={index} className="flex items-center gap-4">
-//                   {skill.icon}
-//                   <span className="w-1/4 text-lg font-bold">{skill.name}</span>
-//                   <div className="flex-1 bg-gray-700 rounded-full h-3 overflow-hidden">
-//                     <div className={`bg-gradient-to-r from-green-400 to-blue-500 h-full ${skill.level} rounded-full transition-transform duration-300 hover:scale-105`}></div>
-//                   </div>
-//                 </div>
-//               ))}
-//             </div>
-//             <div className="mt-12 flex justify-around text-center">
-//               <div>
-//                 <h1 className="text-3xl font-bold text-green-400">1+</h1>
-//                 <p>Years Experience</p>
-//               </div>
-//               <div>
-//                 <h1 className="text-3xl font-bold text-green-400">2+</h1>
-//                 <p>Projects</p>
-//               </div>
-//               <div>
-//                 <h1 className="text-3xl font-bold text-green-400">3+</h1>
-//                 <p>Happy Clients</p>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default About;
-
-
 import React, { useState, useEffect } from 'react';
 import { SiHtml5, SiTailwindcss, SiNodedotjs, SiJavascript, SiExpress } from 'react-icons/si';
 import { FaReact, FaAward, FaUsers, FaProjectDiagram } from 'react-icons/fa';
@@ -140,14 +75,14 @@ const About = () => {
 
   return (
     <section className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white py-20 px-4 md:px-8 overflow-hidden">
-      {/* Background Elements */}
+
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
       </div>
 
       <div className="max-w-7xl mx-auto relative z-10">
-        {/* Section Header */}
+
         <div className={`text-center mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent mb-4">
             About Me
@@ -155,9 +90,9 @@ const About = () => {
           <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-purple-400 mx-auto rounded-full"></div>
         </div>
 
-        {/* Main Content */}
+
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Profile Image */}
+
           <div className={`relative transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
             <div className="relative group">
               <div className="absolute -inset-4 bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 rounded-2xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
@@ -170,9 +105,9 @@ const About = () => {
             </div>
           </div>
 
-          {/* Content */}
+      
           <div className={`space-y-8 transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
-            {/* Description */}
+        
             <div className="space-y-6">
               <h3 className="text-3xl font-bold text-gradient bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
                 Full-Stack Developer
@@ -189,7 +124,6 @@ const About = () => {
               </p>
             </div>
 
-            {/* Skills Section */}
             <div className="space-y-6">
               <h4 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
                 <div className="w-8 h-8 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-lg flex items-center justify-center">
@@ -226,7 +160,6 @@ const About = () => {
           </div>
         </div>
 
-        {/* Achievements Section */}
         <div className={`mt-20 transition-all duration-1000 delay-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div className="grid md:grid-cols-3 gap-8">
             {achievements.map((achievement, index) => (
@@ -250,7 +183,6 @@ const About = () => {
           </div>
         </div>
 
-        {/* Call to Action */}
         <div className={`text-center mt-16 transition-all duration-1000 delay-900 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <button className="group relative inline-flex items-center gap-3 bg-gradient-to-r from-cyan-400 to-purple-400 text-white px-8 py-4 rounded-full font-semibold text-lg hover:from-cyan-500 hover:to-purple-500 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-purple-500/25">
             <span>Let's Work Together</span>
