@@ -97,13 +97,13 @@ const CV = () => {
   ];
 
   const handleDownloadCV = () => {
-    // In a real application, this would trigger a PDF download
+ 
     alert('CV download feature would be implemented here!');
   };
 
   return (
     <div className="min-h-screen bg-black text-white overflow-hidden relative">
-      {/* Animated Background */}
+    
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-20 left-20 w-40 h-40 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-40 right-20 w-32 h-32 bg-gradient-to-r from-pink-500 to-yellow-500 rounded-full blur-2xl animate-pulse delay-1000"></div>
@@ -111,7 +111,7 @@ const CV = () => {
       </div>
 
       <div className="relative z-10 container mx-auto px-6 py-12">
-        {/* Header Section */}
+        
         <div className="text-center mb-16">
           <div className="relative inline-block group">
             <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-full blur opacity-30 group-hover:opacity-50 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
@@ -140,7 +140,7 @@ const CV = () => {
             </div>
           </div>
 
-          {/* Download CV Button */}
+         
           <button
             onClick={handleDownloadCV}
             className="mt-8 group relative inline-flex items-center space-x-2 bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/20"
@@ -150,9 +150,9 @@ const CV = () => {
           </button>
         </div>
 
-        {/* Main Content Grid */}
+       
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-8">
-          {/* Contact Information */}
+         
           <div className="lg:col-span-1 xl:col-span-1 space-y-6">
             <div className="backdrop-blur-sm bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/10">
               <h2 className="text-2xl font-bold text-cyan-400 mb-6 flex items-center space-x-2">
@@ -180,7 +180,7 @@ const CV = () => {
               </div>
             </div>
 
-            {/* Languages */}
+          
             <div className="backdrop-blur-sm bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/10">
               <h2 className="text-2xl font-bold text-purple-400 mb-6 flex items-center space-x-2">
                 <FaLanguage className="w-6 h-6" />
@@ -205,7 +205,7 @@ const CV = () => {
             </div>
           </div>
 
-          {/* Education */}
+       
           <div className="lg:col-span-1 xl:col-span-1">
             <div className="backdrop-blur-sm bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-green-500/10 h-full">
               <h2 className="text-2xl font-bold text-green-400 mb-6 flex items-center space-x-2">
@@ -241,9 +241,9 @@ const CV = () => {
             </div>
           </div>
 
-          {/* Skills */}
+         
           <div className="lg:col-span-2 xl:col-span-2 space-y-6">
-            {/* General Skills */}
+          
             <div className="backdrop-blur-sm bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-yellow-500/10">
               <h2 className="text-2xl font-bold text-yellow-400 mb-6 flex items-center space-x-2">
                 <HiSparkles className="w-6 h-6" />
@@ -263,7 +263,7 @@ const CV = () => {
               </div>
             </div>
 
-            {/* Technical Skills */}
+       
             <div className="backdrop-blur-sm bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/10">
               <h2 className="text-2xl font-bold text-blue-400 mb-6 flex items-center space-x-2">
                 <FaCode className="w-6 h-6" />
@@ -285,7 +285,7 @@ const CV = () => {
           </div>
         </div>
 
-        {/* Footer Quote */}
+       
         <div className="mt-16 text-center">
           <div className="backdrop-blur-sm bg-white/5 border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-all duration-500">
             <blockquote className="text-xl md:text-2xl text-gray-300 font-light italic mb-4">
